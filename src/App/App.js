@@ -1,13 +1,51 @@
 import React from 'react';
-import './App.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import firebase from 'firebase/app';
 
-function App() {
-  return (
-    <div className="App">
-        <button className="btn btn-secondary">WINNING!!</button>
-    </div>
-  );
+import firebaseConnection from '../helpers/data/connection';
+import Auth from '../components/Auth/Auth';
+import NavBar from '../components/NavBar/NavBar';
+
+import './App.scss';
+
+firebaseConnection();
+
+class App extends React.Component {
+  state = {
+    authed: false,
+  }
+
+  componentDidMount() {
+    this.removeListener = firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({ authed: true });
+      } else {
+        this.setState({ authed: false });
+      }
+    });
+  }
+
+  componentWillUnmount() {
+    this.removeListener();
+  }
+
+  renderView = () => {
+    const { authed } = this.state;
+    if (!authed) {
+      return (<Auth />);
+    }
+    return (<div>LoggedIn</div>);
+  }
+
+  render() {
+    const { authed } = this.state;
+
+    return (
+      <div className="App">
+        <NavBar authed={authed} />
+        { this.renderView() }
+      </div>
+    );
+  }
 }
 
 export default App;
