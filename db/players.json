@@ -1,0 +1,50 @@
+{
+  "player1": {
+    "imageUrl": "https://easydrawingguides.com/wp-content/uploads/2018/09/Stormtrooper-Helmet-10.webp",
+    "name": "Jerry",
+    "position": "Patrol Trooper",
+    "uid": ""
+  },
+  "player2": {
+    "imageUrl": "https://easydrawingguides.com/wp-content/uploads/2018/09/Stormtrooper-Helmet-10.webp",
+    "name": "Bill",
+    "position": "Jump Trooper",
+    "uid": ""
+  },
+  "player3": {
+    "imageUrl": "https://easydrawingguides.com/wp-content/uploads/2018/09/Stormtrooper-Helmet-10.webp",
+    "name": "Jed",
+    "position": "Imperial Heavy Trooper",
+    "uid": ""
+  },
+  "player4": {
+    "imageUrl": "https://easydrawingguides.com/wp-content/uploads/2018/09/Stormtrooper-Helmet-10.webp",
+    "name": "Barnabus",
+    "position": "Imperial Shock Trooper",
+    "uid": ""
+  },
+  "player5": {
+    "imageUrl": "https://easydrawingguides.com/wp-content/uploads/2018/09/Stormtrooper-Helmet-10.webp",
+    "name": "Perry",
+    "position": "Patrol Trooper",
+    "uid": ""
+  },
+  "player6": {
+    "imageUrl": "https://easydrawingguides.com/wp-content/uploads/2018/09/Stormtrooper-Helmet-10.webp",
+    "name": "Saxton",
+    "position": "Range Trooper",
+    "uid": ""
+  },
+  "player7": {
+    "imageUrl": "https://easydrawingguides.com/wp-content/uploads/2018/09/Stormtrooper-Helmet-10.webp",
+    "name": "Riley",
+    "position": "Stormtrooper Grenadier",
+    "uid": ""
+  },
+  "player8": {
+    "imageUrl": "https://easydrawingguides.com/wp-content/uploads/2018/09/Stormtrooper-Helmet-10.webp",
+    "name": "Marcus",
+    "position": "Sniper Trooper",
+    "uid": ""
+  }
+}
