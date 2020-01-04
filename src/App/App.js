@@ -4,6 +4,7 @@ import firebase from 'firebase/app';
 import firebaseConnection from '../helpers/data/connection';
 import Auth from '../components/Auth/Auth';
 import NavBar from '../components/NavBar/NavBar';
+import Team from '../components/Team/Team';
 
 import './App.scss';
 
@@ -33,7 +34,7 @@ class App extends React.Component {
     if (!authed) {
       return (<Auth />);
     }
-    return (<div>LoggedIn</div>);
+    return (<Team />);
   }
 
   render() {
